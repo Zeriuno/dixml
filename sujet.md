@@ -54,6 +54,4 @@ mot : {$mot}
 ```
 ## Étape 5
 
-Ajouter une page HTML avec un formulaire afin d’offrir une interface d’interrogation de votre dictionnaire semblable à ce qui est présenté ci-dessous.
-
-![]￼(./apercu.png)
+Ajouter une page HTML avec un formulaire afin d’offrir une interface d’interrogation de votre dictionnaire semblable à ce qui est présenté [ici](./apercu.png).
