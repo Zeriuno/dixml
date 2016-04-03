@@ -6,6 +6,8 @@ L’objectif de se devoir est de construire un ressource dictionnairique multi- 
 
 Écrire la DTD (dictionnaire.dtd) permettant de représenter le dictionnaire. L’entrée (la vedette) du dictionnaire est un terme ou un mot en français, à chaque vedette on associe une catégorie grammaticale et une liste d’équivalents dans d’autres langues.
 
+###Instructions
+###Questions
 
 ## Étape 2
 
@@ -23,11 +25,18 @@ L’instruction XQuery suivante html:parse(fetch:text(url)) permet de téléch
       }
 </resultat>
 ```
+
+###Instructions
+###Questions
+
+
 ## Étape 3
 
 En utilisant le script de la question précédente, construire un dictionnaire dont la taille ne doit pas être inférieure à 100 mots.
 Si nécessaire, ne pas hésiter à modifier manuellement le résultat.
 
+###Instructions
+###Questions
 
 ## Étape 4
 
@@ -55,3 +64,6 @@ mot : {$mot}
 ## Étape 5
 
 Ajouter une page HTML avec un formulaire afin d’offrir une interface d’interrogation de votre dictionnaire semblable à ce qui est présenté [ici](./apercu.png).
+
+###Instructions
+###Questions
