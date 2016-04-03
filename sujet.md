@@ -1,6 +1,6 @@
 # XML : Dictionnaire
 
-L’objectif de se devoir est de construire un ressource dictionnairique multi- lingue sur un sujet précis (un sport, une discipline, … ) que vous choisirez. Ce travail est à rendre pour le 30 avril.
+L’objectif de se devoir est de construire un ressource dictionnairique multilingue sur un sujet précis (un sport, une discipline, …) que vous choisirez. Ce travail est à rendre pour le 14 Mai.
 
 ## Étape 1
 
