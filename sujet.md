@@ -90,7 +90,8 @@ Il manque:
 
 * la partie où l'on accède le fichier et on itère cette requête ligne par ligne
 * la partie où l'on récupère les éléments de la page demandée qui nous intéressent (dont les mots dans les autres langues)
-  Pour les récupérer, il faut aller chercher les liens dans la section `<h3 id="p-lang-label">Autres langues</h3>`, se rendre sur la page liée et puis y trouver le mot.
+  Pour les récupérer, il faut aller chercher les liens dans la section `<h3 id="p-lang-label">Autres langues</h3>`: dans la liste on peut trouver le nom de la langue, se rendre sur la page liée et puis y trouver le mot.
+  Par contre le nom de la langue est donné dans la langue de déstination (donc "Italiano" et non pas "Italien", contrairement à ce qui est montré dans l'aperçu).
 * la partie où on se sert de ce qu'on a récupéré pour en faire une entrée, à écrire à la suite des autres, dans le fichier `dixml.xml` (ou semblable)
 
 
