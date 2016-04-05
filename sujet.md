@@ -52,8 +52,27 @@ Point de départ, voici le dictionnaire qui nous a été proposé en cours:
   </sense>
   <id>10000</id>
 </entry>
-<dic>
+</dic>
 ```
+
+Entre celui-ci et l'exemple donnée dans l'image, on pourrait faire cette hypothèse:
+
+```
+<dic>
+  <entry>
+    <orth></orth>
+    <gramgrp>
+      <gram type="pos"></gram>
+      <gram type="gen"></gram>
+    </gramgrp>
+    <def></def>
+    <translate>
+    </translate>
+  </entry>
+</dic>
+```
+Et dans `<translate>` il y aurait la liste de toutes les traductions du mot.
+
 ###Questions
 
 ## Étape 2
