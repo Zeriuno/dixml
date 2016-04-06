@@ -67,11 +67,29 @@ Entre celui-ci et l'exemple donnée dans l'image, on pourrait faire cette hypoth
     </gramgrp>
     <def></def>
     <translate>
+      <foreign lang=""></foreign>
     </translate>
   </entry>
 </dic>
 ```
-Et dans `<translate>` il y aurait la liste de toutes les traductions du mot.
+
+L'attribut `lang` est renseigné en utilisant le code de la langue selong la norme ISO 639-1 (cf. [ici](http://www.loc.gov/standards/iso639-2/php/English_list.php "")).
+
+Ce qui donnerait cette dtd:
+
+
+```
+<!ELEMENT dic (entry+)>
+  <!ELEMENT entry (orth, gramgrp, def, translate)>
+    <!ELEMENT orth (#PCDATA)>
+    <!ELEMENT gramgrp (gram+)>
+      <!ELEMENT gram (#PCDATA)>
+      <!ATTLIST gram type CDATA #REQUIRED>
+    <!ELEMENT def (#PCDATA)>
+    <!ELEMENT translate (foreign*)>
+      <!ELEMENT foreign (#PCDATA)>
+      <!ATTLIST foreign lang CDATA #REQUIRED>
+```
 
 ###Questions
 
