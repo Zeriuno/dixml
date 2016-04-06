@@ -1,0 +1,10 @@
+<!ELEMENT dic (entry+)>
+  <!ELEMENT entry (orth, gramgrp, def, translate)>
+    <!ELEMENT orth (#PCDATA)>
+    <!ELEMENT gramgrp (gram+)>
+      <!ELEMENT gram (#PCDATA)>
+      <!ATTLIST gram type CDATA #REQUIRED>
+    <!ELEMENT def (#PCDATA)>
+    <!ELEMENT translate (foreign*)>
+      <!ELEMENT foreign (#PCDATA)>
+      <!ATTLIST foreign lang CDATA #REQUIRED>
