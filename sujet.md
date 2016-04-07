@@ -3,7 +3,7 @@
 L’objectif de se devoir est de construire un ressource dictionnairique multilingue sur un sujet précis (un sport, une discipline, …) que vous choisirez. Ce travail est à rendre pour le 14 Mai.
 
 * [x] Étape 1
-* [ ] Étape 2
+* [x] Étape 2
 * [x] Étape 3
 * [ ] Étape 4
 * [ ] Étape 5
