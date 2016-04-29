@@ -1,0 +1,7 @@
+<!ELEMENT liste_vedettes (vedette+)>
+<!ELEMENT vedette (terme, catgram, traductions)>
+<!ELEMENT terme (#PCDATA)>
+<!ELEMENT catgram (#PCDATA)>
+<!ELEMENT traductions (langue, tradterme)+>
+	<!ELEMENT langue (#PCDATA)>
+	<!ELEMENT tradterme (#PCDATA)>
