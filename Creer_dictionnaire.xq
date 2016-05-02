@@ -1,12 +1,12 @@
-<ListeVedettes>
+<dic>
 {
-let $fichier := "maListe.xml"
+let $fichier := "MaListe.xml"
 for $element in doc($fichier)//v
 return
-  <Vedette>
-    <Mot>{$element/mot/text()}</Mot>
-    <CategorieGram>{$element/catGram/text()}</CategorieGram>
-    <Traductions>
+  <entry>
+    <orth>{$element/mot/text()}</orth>
+    <gramgrp>{$element/catGram/text()}</gramgrp>
+    <translate>
       {
        let $mot := $element/mot/text()
        for $L in html:parse(fetch:text(concat("http://fr.wiktionary.org/wiki/",$mot)))//div[@class="translations"]//li//span[@lang]
@@ -19,7 +19,7 @@ return
          <MotTraduit>{$motTraduit}</MotTraduit>
         </T>
       }
-    </Traductions>
-  </Vedette>
+    </translate>
+  </entry>
 }
-</ListeVedettes>
+</dic>
