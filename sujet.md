@@ -87,15 +87,15 @@ Il manque:
 
 
 
-###Questions
+### Questions
 
 ## Étape 3
 
 En utilisant le script de la question précédente, construire un dictionnaire dont la taille ne doit pas être inférieure à 100 mots.
 Si nécessaire, ne pas hésiter à modifier manuellement le résultat.
 
-###Instructions
-###Questions
+### Instructions
+### Questions
 
 ## Étape 4
 
@@ -120,14 +120,14 @@ mot : {$mot}
 </html>
 ```
 
-###Instructions
-###Questions
+### Instructions
+### Questions
 
 ## Étape 5
 
 Ajouter une page HTML avec un formulaire afin d’offrir une interface d’interrogation de votre dictionnaire semblable à ce qui est présenté [ici](./apercu.png).
 
-###Instructions
+### Instructions
 
 Quelque chose dans ce genre:
 ```
@@ -141,7 +141,7 @@ Probablement lors du POST, le serveur de baseX récupère la valeur saisie (on v
 http://localhost:8984/rest?run=testparam.xq&mot=valeur&method=html
 ```
 
-###Questions
+### Questions
 
 * Si la valeur saisie n'est pas la bonne (pas présente dans le dictionnaire), que se passe-t-il, le serveur renvoie-t-il une erreur 404? Faut-il dans ce cas personnaliser la page?
 * Songer à la conversion: l'utilisateur saisit en UTF-8, l'espace de nommage de HTML est plus restreint. Est-ce que baseX s'en charge?
