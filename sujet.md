@@ -12,90 +12,9 @@ L’objectif de se devoir est de construire un ressource dictionnairique multili
 
 Écrire la DTD (dictionnaire.dtd) permettant de représenter le dictionnaire. L’entrée (la vedette) du dictionnaire est un terme ou un mot en français, à chaque vedette on associe une catégorie grammaticale et une liste d’équivalents dans d’autres langues.
 
-###Instructions
+### Instructions
 
-Point de départ, voici le dictionnaire qui nous a été proposé en cours:
-
-```
-<dic>
-<entry>
-  <form>
-    <orth>GOUTTE-2</orth>
-    <date>2012-08-10T20:25:51.563+02:00</date>
-    <valid>newadd</valid>
-    <auteur>yschauwecker</auteur>
-  </form>
-  <gramgrp>
-    <gram type="pos">Subst.</gram>
-    <gram type="gen">fém.</gram>
-  </gramgrp>
-  <etym>
-    <bibl>
-      <etymosrc>FEW</etymosrc>
-    </bibl>
-    <mentioned>Etymon</mentioned>
-  </etym>
-  <sense med="Sciences_Nat." mod="MIN.">
-    <def>Corps, formation pierreuse, d'une nature différente de la pierre dans laquelle il se trouve renfermé, inclusion.</def>
-    <note id="Struct">
-      <xr>
-        <ref>Ø</ref>
-      </xr>
-      <xr>
-        <ref>Ø</ref>
-      </xr>
-      <xr>
-        <ref>Ø</ref>
-      </xr>
-      <xr>
-        <gloss>Texte encyclopédique</gloss>
-      </xr>
-    </note>
-    <cit>
-      <quote>Jaspes sont de nuef mannieres et de diverses couleurs et de diverses vertus, et son trouvees es souverainnes parties du monde ; mes celle qui est verte si est la mieudre ; et comme il y a <mark2>goutes</mark2> noires, mieuls en vuault ; et comme il i a <mark2>goutes</mark2> vermueilles et il est vert et il est entaillié de vielle entailleure, celui si est li sires des jaspes.</quote>
-      <bibl>Sidrach, Fontaine de toutes sciences, 3e t. 13 s. (après 1268), ms. BL Add 17914 (1er t. 14e s.), éd. E.-P. Ruhe, q. 1072, p. 388</bibl>
-    </cit>
-  </sense>
-  <id>10000</id>
-</entry>
-</dic>
-```
-
-Entre celui-ci et l'exemple donnée dans l'image, on pourrait faire cette hypothèse:
-
-```
-<dic>
-  <entry>
-    <orth></orth>
-    <gramgrp>
-      <gram type="pos"></gram>
-      <gram type="gen"></gram>
-    </gramgrp>
-    <def></def>
-    <translate>
-      <foreign lang=""></foreign>
-    </translate>
-  </entry>
-</dic>
-```
-
-L'attribut `lang` est renseigné en utilisant le code de la langue selong la norme ISO 639-1 (cf. [ici](http://www.loc.gov/standards/iso639-2/php/English_list.php "")).
-
-Ce qui donnerait cette dtd:
-
-
-```
-<!ELEMENT dic (entry+)>
-  <!ELEMENT entry (orth, gramgrp, def, translate)>
-    <!ELEMENT orth (#PCDATA)>
-    <!ELEMENT gramgrp (gram+)>
-      <!ELEMENT gram (#PCDATA)>
-      <!ATTLIST gram type CDATA #REQUIRED>
-    <!ELEMENT def (#PCDATA)>
-    <!ELEMENT translate (foreign*)>
-      <!ELEMENT foreign (#PCDATA)>
-      <!ATTLIST foreign lang CDATA #REQUIRED>
-```
+cf `dic.dtd`
 
 ###Questions
 
@@ -105,7 +24,7 @@ Ce qui donnerait cette dtd:
 
 ### Aide
 
-L’instruction XQuery suivante html:parse(fetch:text(url)) permet de télécharger une page HTML et de la transformer en XML valide. Par exemple le code suivant permet de récupérer les titre de la page d’accueil du sir de l’université Paris 1 :
+L’instruction XQuery suivante `html:parse(fetch:text(url))` permet de télécharger une page HTML et de la transformer en XML valide. Par exemple le code suivant permet de récupérer les titre de la page d’accueil du site de l’université Paris 1 :
 ```
 <resultat> {
         let $url:= "http://www.univ-paris1.fr"
