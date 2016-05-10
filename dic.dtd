@@ -1,5 +1,5 @@
 <!ELEMENT dic (entry+)>
-  <!ELEMENT entry (orth, gramgrp, def, translate)>
+  <!ELEMENT entry (orth, gramgrp, translate)>
     <!ELEMENT orth (#PCDATA)>
     <!ELEMENT gramgrp (#PCDATA)>
     <!ELEMENT def (#PCDATA)>
