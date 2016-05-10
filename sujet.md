@@ -16,8 +16,6 @@ L’objectif de se devoir est de construire un ressource dictionnairique multili
 
 cf `dic.dtd`
 
-### Questions
-
 ## Étape 2
 
 À partir d’une liste de mots en français stockés dans un fichier écrire un script XQuery qui permet de construire automatiquement un dictionnaire tel que décrit par la DTD de la question précédente à partir du site web : http://fr.wiktionary.org.
