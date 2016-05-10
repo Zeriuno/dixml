@@ -28,7 +28,7 @@ return
 			let $motTraduit := $L/data()
        return
        <ul class="contenu">
-         <li></li><Langue>{$langueComplete}</Langue> :
+         <Langue>{$langueComplete}</Langue>
          <MotTraduit>{$motTraduit}</MotTraduit>
         </ul>
       }
