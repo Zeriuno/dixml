@@ -1,5 +1,5 @@
 <!ELEMENT dictionnaire (vedette+)>
-	<!ELEMENT vedette (mot,categorie, traduc+)>
+	<!ELEMENT vedette (mot, categorie, traduc+)>
 	<!ELEMENT mot (#PCDATA)>
 	<!ELEMENT cat (categorie)>
 		<!ELEMENT categorie (#PCDATA)>
