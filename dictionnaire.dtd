@@ -1,0 +1,9 @@
+<!ELEMENT dictionnaire (vedette+)>
+	<!ELEMENT vedette (mot,categorie, traduc+)>
+	<!ELEMENT mot (#PCDATA)>
+	<!ELEMENT cat (categorie)>
+		<!ELEMENT categorie (#PCDATA)>
+	<!ELEMENT traduc (contenu+)>
+	<!ELEMENT contenu(pays, nouveaumot)+>
+		<!ELEMENT pays (#PCDATA)>
+		<!ELEMENT nouveaumot (#PCDATA)>
