@@ -35,7 +35,7 @@ L’instruction XQuery suivante `html:parse(fetch:text(url))` permet de télé
 </resultat>
 ```
 
-###Instructions
+### Instructions
 
 Compte tenu que les URLs de wiktionary sont faites ainsi: `https://fr.wiktionary.org/wiki/plaquebière`, le début de la requête pourra ressembler à ceci
 
