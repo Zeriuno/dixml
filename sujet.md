@@ -37,27 +37,23 @@ L’instruction XQuery suivante `html:parse(fetch:text(url))` permet de télé
 
 ### Instructions
 
-Compte tenu que les URLs de wiktionary sont faites ainsi: `https://fr.wiktionary.org/wiki/plaquebière`, le début de la requête pourra ressembler à ceci
 
-```
+1. Avoir un fichier de input. Ici `input-list.xml`
+  On peut le constituer par une requête à une catégorie du wiktionary. Type ça (cf. `get-input-list.xq`):
+  ```
+  <input>
 {
-  let $url:= "https://fr.wiktionary.org"
-  for $titre in html:parse(fetch:text($url))//h1
-  return
-  <titre>{$titre/text()}</titre>
+let $url:= "https://fr.wiktionary.org/wiki/Cat%C3%A9gorie:Outils_en_fran%C3%A7ais"
+for $mot in html:parse(fetch:text($url))//a
+return
+<item>{$mot/text()}</item>
 }
-```
-
-Script qui fait un dictionnaire en HTML.
-```
-(:
-Requête XQuery pour faire de chaque entry dans le dictionnaire.
-De M. Issac
-:)
-
+</input>
+  ```
+2. ```
 <html lang="fr">
   <head>
-    <title>Index</title>
+    <title>Dictionnaire</title>
     <meta charset="utf-8" />
   </head>
   <body>
@@ -76,16 +72,6 @@ De M. Issac
   </body>
 </html>
 ```
-
-Il manque:
-
-* la partie où l'on accède le fichier et on itère cette requête ligne par ligne
-* la partie où l'on récupère les éléments de la page demandée qui nous intéressent (dont les mots dans les autres langues)
-  Pour les récupérer, il faut aller chercher les liens dans la section `<h3 id="p-lang-label">Autres langues</h3>`: dans la liste on peut trouver le nom de la langue, se rendre sur la page liée et puis y trouver le mot.
-  Par contre le nom de la langue est donné dans la langue de déstination (donc "Italiano" et non pas "Italien", contrairement à ce qui est montré dans l'aperçu).
-* la partie où on se sert de ce qu'on a récupéré pour en faire une entrée, à écrire à la suite des autres, dans le fichier `dixml.xml` (ou semblable)
-
-
 
 ### Questions
 
