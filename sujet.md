@@ -16,7 +16,7 @@ L’objectif de se devoir est de construire un ressource dictionnairique multili
 
 cf `dic.dtd`
 
-###Questions
+### Questions
 
 ## Étape 2
 
