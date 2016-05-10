@@ -73,8 +73,6 @@ return
 </html>
 ```
 
-### Questions
-
 ## Étape 3
 
 En utilisant le script de la question précédente, construire un dictionnaire dont la taille ne doit pas être inférieure à 100 mots.
