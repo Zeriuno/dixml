@@ -14,7 +14,7 @@ return
 		<categorie>
         {
 			let $mot := $element/mot/text()
-			for $categorie  in html:parse(fetch:text(concat("https://fr.wiktionary.org/wiki/",$mot)))//li[@class="toclevel-2 tocsection-3"]//a[@href="#Nom_commun"]//span[@class="toctext"]//span
+			for $categorie  in html:parse(fetch:text(concat("https://fr.wiktionary.org/wiki/",$mot)))//h3/span/span[@class="titredef"] (:défaut: si un mot a plusieurs définitions, avec ce selecteur on aura plusieurs cat.:)
        return
       <cat>{$categorie/text()}</cat>
       }
