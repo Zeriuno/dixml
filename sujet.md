@@ -76,9 +76,6 @@ return
 En utilisant le script de la question précédente, construire un dictionnaire dont la taille ne doit pas être inférieure à 100 mots.
 Si nécessaire, ne pas hésiter à modifier manuellement le résultat.
 
-### Instructions
-### Questions
-
 ## Étape 4
 
 En vous inspirant du code donné ci après, interfacez votre dictionnaire via le serveur web de basex.
