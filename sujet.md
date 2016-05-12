@@ -48,7 +48,7 @@ return
 }
 </input>
   ```
-2. ```
+```
 <html lang="fr">
   <head>
     <title>Dictionnaire</title>
