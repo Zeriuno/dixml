@@ -20,19 +20,6 @@ cf `dic.dtd`
 
 À partir d’une liste de mots en français stockés dans un fichier écrire un script XQuery qui permet de construire automatiquement un dictionnaire tel que décrit par la DTD de la question précédente à partir du site web : http://fr.wiktionary.org.
 
-### Aide
-
-L’instruction XQuery suivante `html:parse(fetch:text(url))` permet de télécharger une page HTML et de la transformer en XML valide. Par exemple le code suivant permet de récupérer les titre de la page d’accueil du site de l’université Paris 1 :
-```
-<resultat> {
-        let $url:= "http://www.univ-paris1.fr"
-        for $titre in html:parse(fetch:text($url))//h1
-        return
-          <titre>{$titre/text()}</titre>
-      }
-</resultat>
-```
-
 ### Instructions
 
 
