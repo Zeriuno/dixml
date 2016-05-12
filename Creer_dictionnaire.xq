@@ -1,11 +1,16 @@
 <dic>
 {
-let $fichier := "MaListe.xml"
-for $element in doc($fichier)//v
+let $file := "input-list.xml"
+for $element in doc($file)/item (:l'élément après // doit correspondre à l'élément dont est constituté le fichier de input:)
 return
   <entry>
-    <orth>{$element/mot/text()}</orth>
-    <gramgrp>{$element/catGram/text()}</gramgrp>
+    <orth>{$element/text()}</orth>
+    <gramgrp>
+    {
+    let $word := $element/item/text()
+    for $gram in html:parse(fetch:text(concat("http://fr.wiktionary.org/wiki/",$element)))//h3/span/span[@class="titredef"
+    }
+    </gramgrp>
     <translate>
       {
        let $mot := $element/mot/text()
